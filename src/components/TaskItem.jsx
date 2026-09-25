@@ -1,8 +1,9 @@
 import React from 'react'
+import './TaskItem.css'
 
 function TaskItem({ id, concluida, onConcluir, onExcluir }) {
   return (
-    <div>
+    <div className="botao">
       {!concluida && (
         <button onClick = {() => onConcluir(id)}>
           Concluir

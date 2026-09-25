@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import TaskItem from './TaskItem';
 import TaskSummary from './TaskSummary';
+import './TaskList.css'
+
 
 export default function TaskList() {
     const [atividades, setAtividades] = useState([
@@ -56,7 +58,7 @@ export default function TaskList() {
             {temPendentes && <p>Você ainda possui tarefas pendentes.</p>}
             {todasConcluidas && <p>Parabéns! Todas as tarefas foram concluídas!</p>}
 
-            <ul>
+            <ul className="atividade" style={{gap: "10px"}}>
                 {atividades.map((atividade) => (
                     <li key={atividade.id}>
                         <h3>{atividade.titulo}</h3>

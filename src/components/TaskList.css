@@ -1,0 +1,28 @@
+.atividade {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
+}
+
+.atividade li{
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.atividade li h3 {
+  margin-top: 0;
+  color: #000000;
+  
+}
+
+@media (max-width: 600px) {
+  .atividade {
+    grid-template-columns: 1fr;
+  }
+}

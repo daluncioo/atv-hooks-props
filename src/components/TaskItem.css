@@ -1,0 +1,25 @@
+.botao {
+  display: flex;
+  gap: 10px;
+}
+
+.botao button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #a1a1a1;
+  color: white;
+  cursor: pointer;
+}
+
+.botao button:hover {
+  background-color: #353535;
+}
+
+.botao button:last-child {
+  background-color: #e62929;
+}
+
+.botao button:last-child:hover {
+  background-color: #6d1717;
+}
